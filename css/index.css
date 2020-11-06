@@ -1,0 +1,66 @@
+#part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    margin-left: 5px;
+    
+    ;
+}
+
+
+#mainTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+/*#haciendo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hecho{
+
+}
+
+#tituloss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}*/
+
+.parte1{
+    padding: 0.5em;
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 20em;
+    border-radius: 0.5em;
+    background: #EEE;
+    height: 5em;
+}
+
+.deleteBtn{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.nextBtn{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.backBtn{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+

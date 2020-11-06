@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz 2</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>  
+        <h1 id="mainTitle">Global Solution SAS</h1>
+        <div id="part1">
+            <input id="task" type="text" placeholder="Descripcion de la tarea">
+            <button id="taskBtn">Nueva tarea</button>
+        </div>
+
+        <div id="tituloss">
+            
+            <!--<h2 id="haciendo">Doing</h2>
+            <h2 id="hecho">Done</h2>-->
+        </div>
+        
+        <div id="p1">
+            <h2 id="toDo">To Do</h2>
+            <div id="taskContainer">
+
+            </div>
+        </div>
+
+        <div id="p2">
+            <h2 id="doing">Doing</h2>
+            <div id="taskContainer2"></div>
+        </div>
+
+        <div id="p3">
+            <h2 id="done">Done</h2>
+            <div id="taskContainer3"></div>
+        </div>
+        
+        
+    </body>
+</html>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDea8q8TdUlgGhrpAwxbWB63O_oiReuSWU",
+    authDomain: "quiz2-e07ef.firebaseapp.com",
+    databaseURL: "https://quiz2-e07ef.firebaseio.com",
+    projectId: "quiz2-e07ef",
+    storageBucket: "quiz2-e07ef.appspot.com",
+    messagingSenderId: "571399258698",
+    appId: "1:571399258698:web:e6052010f67a080f521cb3",
+    measurementId: "G-RF0Q4E0BVZ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="components/parte1.js"></script>
+<script src="js/index.js"></script>
