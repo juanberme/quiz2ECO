@@ -1,11 +1,33 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 #part1{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5px;
     margin-left: 5px;
-    
-    ;
+}
+
+#mainTitle{
+    color: #2EA67A;
+}
+
+#taskBtn{
+    background: #84D96C;
+}
+
+#toDo{
+    color: #2EA67A;
+}
+
+#doing{
+    color: #2EA67A;
+}
+
+#done{
+    color: #2EA67A;
 }
 
 
@@ -16,51 +38,71 @@
     margin: 5px;
 }
 
-/*#haciendo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#hecho{
-
-}
-
-#tituloss{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+#grafico{
     
-}*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 100px;
+    gap: 15%;
+    
+}
+
+#p1{
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+}
+
+#p2{
+    display: flex;
+    flex-direction: column;
+    width: 10em;   
+}
+
+#p3{
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+}
 
 .parte1{
-    padding: 0.5em;
+    padding: 1em;
     position: relative;
     margin-top: 2em;
     margin-bottom: 2em;
-    width: 20em;
-    border-radius: 0.5em;
-    background: #EEE;
+    width: 15em;
+    border-radius: 0.8em;
+    background:#FFE3B3;
     height: 5em;
+    color:  #2EA67A;
 }
 
 .deleteBtn{
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 12px;
+    top: 12px;
+    border-radius: 1;
+    background: #F2B872;
+    border: none;
 }
 
 .nextBtn{
     position: absolute;
-    right: 5px;
-    bottom: 5px;
+    right: 12px;
+    bottom: 12px;
+    border-radius: 1;
+    background: #84D96C;
+    border: none;
 }
 
 .backBtn{
     position: absolute;
-    left: 5px;
-    bottom: 5px;
+    left: 12px;
+    bottom: 12px;
+    border-radius: 1;
+    background: #84D96C;
+    border: none;
 }
 
 

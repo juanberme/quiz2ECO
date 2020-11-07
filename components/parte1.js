@@ -1,4 +1,11 @@
+
+const toDo = 'toDo';
+const doing = 'doing';
+const done = 'done';
+
 class parte1{
+
+    
 
     constructor(phase1){
         this.phase1 = phase1;
@@ -31,11 +38,11 @@ class parte1{
         
         
 
-        if(this.phase1.estado === 'toDo' || this.phase1.estado === 'doing'){
+        if(this.phase1.estado === toDo || this.phase1.estado === doing){
             component.appendChild(nextBtn);
         }
         
-        if(this.phase1.estado === 'doing' || this.phase1.estado === 'done' ){
+        if(this.phase1.estado === doing || this.phase1.estado === done ){
             component.appendChild(backBtn);
         }
 
@@ -48,30 +55,30 @@ class parte1{
         nextBtn.addEventListener('click', () =>{
             const database = firebase.database();
             
-            if(this.phase1.estado === 'toDo'){
-                this.phase1.estado = 'doing';
+            if(this.phase1.estado === toDo){
+                this.phase1.estado = doing;
                 database.ref('prioridades/doing/'+this.phase1.id).set(this.phase1);
                 database.ref('prioridades/toDo/'+this.phase1.id).set(null);
             }else
                 
             
             
-            if(this.phase1.estado === 'doing'){
-                this.phase1.estado = 'done';
+            if(this.phase1.estado === doing){
+                this.phase1.estado = done;
                 database.ref('prioridades/done/'+this.phase1.id).set(this.phase1);
                 database.ref('prioridades/doing/'+this.phase1.id).set(null);
             }
         });
 
         backBtn.addEventListener('click', () =>{
-            if(this.phase1.estado === 'done'){
-                this.phase1.estado = 'doing';
+            if(this.phase1.estado === done){
+                this.phase1.estado = doing;
                 database.ref('prioridades/doing/'+this.phase1.id).set(this.phase1);
                 database.ref('prioridades/done/'+this.phase1.id).set(null);
             } else
 
-            if(this.phase1.estado === 'doing'){
-                this.phase1.estado = 'toDO';
+            if(this.phase1.estado === doing){
+                this.phase1.estado = toDo;
                 database.ref('prioridades/toDo/'+this.phase1.id).set(this.phase1);
                 database.ref('prioridades/doing/'+this.phase1.id).set(null);
             }
